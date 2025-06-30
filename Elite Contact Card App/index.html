@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Contact Card App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="elite-container">
+    <div class="left-panel">
+      <h2> ✍🏻Add Contact</h2>
+      <form id="contactForm" class="elite-form">
+        <div class="field">
+          <input type="text" name="name" required />
+          <label>Name</label>
+        </div>
+        <div class="field">
+          <input type="tel" name="phone" required />
+          <label>Phone</label>
+        </div>
+        <div class="field">
+          <input type="email" name="email" required />
+          <label>Email</label>
+        </div>
+        <div class="field">
+          <input type="text" name="address" required />
+          <label>Address</label>
+        </div>
+        <div class="field">
+          <input type="number" name="age" required />
+          <label>Age</label>
+        </div>
+        <button type="submit">➕ Save Contact</button>
+      </form>
+    </div>
+
+    <div class="right-panel">
+      <h2>📜 Saved Contacts</h2>
+      <div class="contact-list" id="contactList"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
